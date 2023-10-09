@@ -4,7 +4,7 @@ import styles from "@/styles/Home.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function HomePage() {
+export default function AboutPage() {
   return (
     <>
       <Head>
@@ -16,7 +16,7 @@ export default function HomePage() {
       <main className={`${styles.main} ${inter.className}`}>
         <h1 className={styles.title}>
           {" "}
-         ir a <a href="/about">About</a>
+          ir a <a href="/">Home</a>
         </h1>
       </main>
     </>
