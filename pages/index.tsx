@@ -1,24 +1,14 @@
-import Head from "next/head";
-import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import Link from "next/link";
+import MainLayout from "./../components/layouts/MainLayout";
 
 export default function HomePage() {
   return (
-    <>
-      <Head>
-        <title>next-curse</title>
-        <meta name="description" content="Home page" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <main className={`${styles.main} ${inter.className}`}>
-        <h1 className={styles.title}>
-          {" "}
-         ir a <a href="/about">About</a>
-        </h1>
-      </main>
-    </>
+    <MainLayout>
+      <h1>Home Page</h1>
+      <h2>
+        {" "}
+        ir a <Link href="/about">About</Link>
+      </h2>
+    </MainLayout>
   );
 }
