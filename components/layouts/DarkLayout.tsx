@@ -1,6 +1,10 @@
-import { FC } from "react";
+import { FC, ReactNode } from "react";
 
-export const DarkLayout: FC = ({ children }): JSX.Element => {
+interface MainLayoutProps {
+  children: ReactNode;
+}
+
+export const DarkLayout: FC<MainLayoutProps> = ({ children }): JSX.Element => {
   return (
     <div
       style={{
