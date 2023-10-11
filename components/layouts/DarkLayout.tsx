@@ -1,6 +1,6 @@
-import React from "react";
+import { FC } from "react";
 
-const DarkLayout = ({ children }) => {
+export const DarkLayout: FC = ({ children }): JSX.Element => {
   return (
     <div
       style={{
@@ -16,9 +16,7 @@ const DarkLayout = ({ children }) => {
       }}
     >
       <h3>Dark-Layout</h3>
-      <div>{children}</div>
+      <div> {children}</div>
     </div>
   );
 };
-
-export default DarkLayout;
